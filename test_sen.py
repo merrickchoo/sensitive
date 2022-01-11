@@ -19,5 +19,5 @@ sentences = ["VADER is smart, handsome, and funny.",
 analyzer = SentimentAnalyzer()
 
 for s in sentences:
-    score = analyzer.polarity_scores(s)
+    score = analyzer.polarity_scores(s)['compound']
     print(score, s)
